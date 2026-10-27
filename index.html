@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d5f59">
+  <meta name="description" content="Aaradhya Health and Home Care Services offers home nursing support, elderly care, post-hospital care and selected home healthcare services in Hyderabad.">
+  <title>Aaradhya Health and Home Care Services | Hyderabad</title>
+  <style>
+    :root{--teal:#0d5f59;--deep:#073f3c;--gold:#c9a45c;--cream:#fbf8f1;--ink:#173b39;--muted:#607572;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:rgba(255,255,255,.97);border-bottom:1px solid #e5eeeb;position:sticky;top:0;z-index:5}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+    .logo{width:44px;height:44px;border-radius:14px;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:800;font-size:21px;border:2px solid var(--gold)}
+    .brand strong{display:block;font-size:15px;line-height:1.2}.brand small{color:var(--muted);font-size:11px;letter-spacing:1.4px;text-transform:uppercase}
+    nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;font-size:14px;font-weight:700;color:#31514e}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 20px;text-decoration:none;font-weight:700;background:var(--gold);color:#172f2d;border:0;cursor:pointer}
+    .btn.outline{background:transparent;border:1px solid rgba(255,255,255,.65);color:#fff}
+    .hero{background:linear-gradient(120deg,rgba(5,55,52,.96),rgba(13,95,89,.87)),url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff;padding:92px 0 84px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}.eyebrow{color:#f1d99f;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}
+    h1{font-size:clamp(36px,5vw,59px);line-height:1.08;margin:16px 0 20px;letter-spacing:-1.5px}.hero p{font-size:18px;max-width:650px;color:#e2efeb}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.trust-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);border-radius:24px;padding:26px}
+    .trust-card h3{margin:0 0 12px;color:#f1d99f}.trust-card ul{padding-left:20px;margin:0}.trust-card li{margin:10px 0;color:#f0f7f5}
+    section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head .eyebrow{color:var(--teal)}h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:10px 0 14px;color:var(--deep)}.section-head p{color:var(--muted);margin:0}
+    .services{background:var(--cream)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;padding:24px;border:1px solid #e6ece7;border-radius:18px;box-shadow:0 8px 24px rgba(15,66,60,.04)}
+    .service .symbol{width:46px;height:46px;border-radius:14px;background:#e7f2ef;display:grid;place-items:center;font-size:23px;margin-bottom:15px}.service h3{margin:0 0 8px;font-size:18px}.service p{margin:0;color:var(--muted);font-size:14px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about-art{min-height:340px;border-radius:24px;background:linear-gradient(145deg,rgba(13,95,89,.08),rgba(201,164,92,.2)),url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1000&q=85') center/cover}
+    .about-copy p{color:var(--muted)}.checks{list-style:none;padding:0}.checks li{margin:11px 0}.checks li:before{content:"✓";color:var(--teal);font-weight:900;margin-right:10px}
+    .band{background:var(--deep);color:#fff;padding:44px 0}.band-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}.band h2{color:#fff;margin:0 0 8px}.band p{margin:0;color:#d6e8e3}
+    .contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-card{background:#fff;border:1px solid #e6ece7;border-radius:20px;padding:28px}.contact-card h3{margin-top:0}.contact-line{display:flex;gap:12px;margin:18px 0;color:var(--muted)}.contact-line b{color:var(--ink)}
+    footer{background:#062f2d;color:#d8e8e4;padding:26px 0;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .note{font-size:12px;color:var(--muted);margin-top:20px}.menu-btn{display:none;background:none;border:1px solid #d7e5e0;border-radius:9px;padding:8px 11px;color:var(--teal);font-weight:bold}
+    @media(max-width:760px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:white;padding:18px 4%;border-bottom:1px solid #e5eeeb;flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu-btn{display:block}.nav>.btn{display:none}.hero{padding:66px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.trust-card{margin-top:4px}.grid{grid-template-columns:1fr 1fr}.band-inner{align-items:flex-start;flex-direction:column}section{padding:58px 0}.about-art{min-height:260px}}
+    @media(max-width:480px){.grid{grid-template-columns:1fr}.brand strong{font-size:13px}.brand small{font-size:9px}.hero p{font-size:16px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Aaradhya home">
+      <span class="logo">A</span><span><strong>Aaradhya Health</strong><small>Home Care Services</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">Menu ☰</button>
+    <nav id="navLinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="#contact">Book a Home Visit</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Compassionate care, closer to home</div>
+        <h1>Healthcare support with comfort, dignity and care.</h1>
+        <p>Aaradhya Health and Home Care Services connects families with home-care support for recovery, everyday care and the needs of loved ones.</p>
+        <div class="actions"><a class="btn" href="#contact">Enquire About a Home Visit</a><a class="btn outline" href="#services">Explore Services</a></div>
+      </div>
+      <aside class="trust-card"><h3>Care at home, made easier</h3><ul><li>Support for older adults and families</li><li>Post-hospital recovery assistance</li><li>Home nursing and care coordination</li><li>Service enquiries in Hyderabad</li></ul></aside>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What we can help with</div><h2>Home healthcare services</h2><p>Discuss your care needs with us so we can clarify availability, suitability and the appropriate qualified professional.</p></div>
+      <div class="grid">
+        <article class="service"><div class="symbol">＋</div><h3>Nursing Support</h3><p>Home nursing assistance arranged according to the patient's needs and the professional's scope of practice.</p></article>
+        <article class="service"><div class="symbol">♡</div><h3>Elderly Care</h3><p>Practical day-to-day support that helps older adults feel safer and more comfortable at home.</p></article>
+        <article class="service"><div class="symbol">✚</div><h3>Post-Hospital Care</h3><p>Recovery support and help coordinating care after discharge from hospital.</p></article>
+        <article class="service"><div class="symbol">◉</div><h3>Injection & IV Care</h3><p>Enquire about clinician-led services where prescribed, clinically appropriate and legally permitted.</p></article>
+        <article class="service"><div class="symbol">✚</div><h3>Dressing & Wound Care</h3><p>Ask about dressing changes and wound-care support provided by an appropriately qualified professional.</p></article>
+        <article class="service"><div class="symbol">⌂</div><h3>Caregiver Assistance</h3><p>Support with routine care needs and family guidance on arranging suitable home assistance.</p></article>
+        <article class="service"><div class="symbol">◎</div><h3>Catheter Care</h3><p>Enquiries for catheter-related care and support by trained, authorised healthcare professionals.</p></article>
+        <article class="service"><div class="symbol">＋</div><h3>Ryle's Tube Care</h3><p>Ask about assessment and tube-related care from a qualified clinician when appropriate.</p></article>
+        <article class="service"><div class="symbol">✧</div><h3>Physiotherapy Coordination</h3><p>Enquire about arranging suitable physiotherapy support for mobility and recovery goals.</p></article>
+      </div>
+      <p class="note">Clinical services are subject to assessment, prescription where required, professional qualifications, availability and applicable local regulations. This website is not an emergency service.</p>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-art" role="img" aria-label="Healthcare professional providing compassionate care"></div>
+      <div class="about-copy"><div class="eyebrow" style="color:var(--teal)">About Aaradhya</div><h2>Thoughtful care for people and families</h2><p>We believe home care should be respectful, dependable and centred on each person's needs. Aaradhya Health and Home Care Services helps families enquire about suitable home-care support in Hyderabad.</p><ul class="checks"><li>Care focused on dignity and comfort</li><li>Clear communication about services</li><li>Support planned around individual needs</li><li>Professional care within appropriate scope</li></ul><a class="btn" href="#contact">Talk About Your Needs</a></div>
+    </div>
+  </section>
+  <div class="band"><div class="wrap band-inner"><div><h2>Looking for home-care support?</h2><p>Tell us what kind of assistance your family needs.</p></div><a class="btn" href="#contact">Make an Enquiry</a></div></div>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Contact</div><h2>Let's discuss your care needs</h2><p>Reach out to enquire about service availability and arranging a home visit.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><h3>Aaradhya Health and Home Care Services</h3><div class="contact-line"><span>📍</span><div><b>Location</b><br>Chikkadpally Metro Station, Hyderabad</div></div><div class="contact-line"><span>🕒</span><div><b>Service enquiries</b><br>Please contact the business directly to confirm availability and timings.</div></div><div class="contact-line"><span>♡</span><div><b>Home visit requests</b><br>Share the type of care required, locality and preferred date when contacting us.</div></div></div>
+        <div class="contact-card"><h3>Request a home visit</h3><p style="color:var(--muted)">Use this form to prepare an enquiry on your phone. It opens your email app if one is configured; no details are sent automatically by this website.</p>
+          <form id="enquiryForm">
+            <label for="person">Your name</label><input id="person" name="person" required placeholder="Enter your name">
+            <label for="locality">Your locality</label><input id="locality" name="locality" required placeholder="Area in Hyderabad">
+            <label for="service">Service required</label><select id="service" name="service" required><option value="">Choose a service</option><option>Nursing support</option><option>Elderly care</option><option>Post-hospital care</option><option>Injection / IV care enquiry</option><option>Dressing / wound care</option><option>Caregiver assistance</option><option>Catheter care</option><option>Ryle's tube care</option><option>Physiotherapy coordination</option><option>Other</option></select>
+            <label for="details">Additional details (optional)</label><textarea id="details" name="details" rows="3" placeholder="Preferred date or general care needs (avoid sharing sensitive medical records)"></textarea>
+            <button class="btn" type="submit">Prepare Enquiry Email</button>
+            <p class="note">This form does not provide emergency assistance. For a medical emergency, contact local emergency services.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><div>© <span id="year"></span> Aaradhya Health and Home Care Services</div><div>Compassionate home-care support · Hyderabad</div></div></footer>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => { const open = nav.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', String(open)); });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); }));
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const d = new FormData(this);
+    const subject = encodeURIComponent('Home care service enquiry - Aaradhya');
+    const body = encodeURIComponent('Name: '+d.get('person')+'\nLocality: '+d.get('locality')+'\nService required: '+d.get('service')+'\nDetails: '+(d.get('details')||'Not provided')+'\n\nPlease contact me about availability.');
+    window.location.href = 'mailto:?subject='+subject+'&body='+body;
+  });
+</script>
+</body>
+</html>
